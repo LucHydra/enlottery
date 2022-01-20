@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enlottery", "Enlottery\Enlottery.csproj", "{11241824-6EE6-4039-9725-E790878337EF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SettupEnlottery", "SettupEnlottery\SettupEnlottery.vdproj", "{02C8A820-4408-4F7F-9D56-47B0E675D7B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11241824-6EE6-4039-9725-E790878337EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11241824-6EE6-4039-9725-E790878337EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11241824-6EE6-4039-9725-E790878337EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11241824-6EE6-4039-9725-E790878337EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C8A820-4408-4F7F-9D56-47B0E675D7B4}.Debug|Any CPU.ActiveCfg = Debug
+		{02C8A820-4408-4F7F-9D56-47B0E675D7B4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4EF2673-7754-43A8-9514-A5AD8BD0237F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/lucnguyenupwork
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Enlottery\\Enlottery.csproj
+		SccProjectName1 = Enlottery
+		SccLocalPath1 = Enlottery
+		SccProjectUniqueName2 = SettupEnlottery\\SettupEnlottery.vdproj
+		SccProjectName2 = SettupEnlottery
+		SccLocalPath2 = SettupEnlottery
+	EndGlobalSection
+EndGlobal
