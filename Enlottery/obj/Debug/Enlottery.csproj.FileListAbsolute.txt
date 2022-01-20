@@ -1,9 +1,6 @@
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\Enlottery.exe.config
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\Enlottery.exe
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\Enlottery.pdb
-D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Data.v19.1.dll
-D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Printing.v19.1.Core.dll
-D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Utils.v19.1.dll
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Pdf.v19.1.Core.dll
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Data.v19.1.xml
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\DevExpress.Printing.v19.1.Core.xml
@@ -25,7 +22,6 @@ D:\LucSpace\Enlottery\Enlottery\bin\Debug\de\DevExpress.Pdf.v19.1.Core.resources
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\es\DevExpress.Pdf.v19.1.Core.resources.dll
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\ja\DevExpress.Pdf.v19.1.Core.resources.dll
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\ru\DevExpress.Pdf.v19.1.Core.resources.dll
-D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.csprojAssemblyReference.cache
 D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.frmMain.resources
 D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.Properties.Resources.resources
 D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.csproj.GenerateResource.cache
@@ -34,3 +30,5 @@ D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.csproj.CopyComplete
 D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.exe
 D:\LucSpace\Enlottery\Enlottery\obj\Debug\Enlottery.pdb
 D:\LucSpace\Enlottery\Enlottery\bin\Debug\BuyTicket.xlsx
+D:\LucSpace\enlottery\Enlottery\obj\Debug\Enlottery.csproj.AssemblyReference.cache
+D:\LucSpace\enlottery\Enlottery\bin\Debug\nhacxoso.wav

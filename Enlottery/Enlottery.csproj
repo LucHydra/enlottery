@@ -102,6 +102,11 @@
     <None Include="Resources\num0.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="nhacxoso.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logo-white.d3e0da21bd6cd71cfcbb.png" />
+    <None Include="Resources\Enlab_Primary-Logo_Horizontal_On-Light%403x.png" />
     <Content Include="Resources\num1.png" />
     <Content Include="Resources\num2.png" />
     <Content Include="Resources\num3.png" />
