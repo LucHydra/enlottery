@@ -63,6 +63,16 @@ namespace Enlottery.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Enlab_Primary_Logo_Horizontal_On_Dark_4x__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Enlab_Primary-Logo_Horizontal_On-Dark@4x (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Enlab_Primary_Logo_Horizontal_On_Light_3x {
             get {
                 object obj = ResourceManager.GetObject("Enlab_Primary-Logo_Horizontal_On-Light@3x", resourceCulture);

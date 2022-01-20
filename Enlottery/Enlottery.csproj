@@ -107,6 +107,7 @@
     </Content>
     <None Include="Resources\logo-white.d3e0da21bd6cd71cfcbb.png" />
     <None Include="Resources\Enlab_Primary-Logo_Horizontal_On-Light%403x.png" />
+    <None Include="Resources\Enlab_Primary-Logo_Horizontal_On-Dark%404x %281%29.png" />
     <Content Include="Resources\num1.png" />
     <Content Include="Resources\num2.png" />
     <Content Include="Resources\num3.png" />

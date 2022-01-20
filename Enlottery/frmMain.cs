@@ -368,37 +368,37 @@ namespace Enlottery
             }
 
             // Running Hundered
-            if (_stepCount < 130)
+            if (_stepCount < 150)
             {
                 picHundreds.Image = _imageHunderedCollectionst[Convert.ToInt32(hunderedNumber)].Image;
             } 
 
             // Stop Hundered
-            if (_stepCount == 130)
+            if (_stepCount == 150)
             {
                 picHundreds.Image = _imageHunderedCollections[Convert.ToInt32(hunderedNumber)].Image;
             } 
 
             // Running Thousand
-            if (_stepCount < 140)
+            if (_stepCount < 170)
             {
                 picThousand.Image = _imageThousandCollectionst[Convert.ToInt32(thousandNumber)].Image;
             }  
 
             // Stop Thousand
-            if (_stepCount == 140)
+            if (_stepCount == 170)
             {
                 picThousand.Image = _imageThousandCollections[Convert.ToInt32(thousandNumber)].Image;
             } 
 
             // Running Ten Thousand
-            if (_stepCount < 150)
+            if (_stepCount < 200)
             {
                 picTenThousand.Image = _imageTenThousandCollectionst[Convert.ToInt32(tenThousandNumber)].Image;
             }
 
             // Stop Ten Thousand
-            if (_stepCount == 150)
+            if (_stepCount == 200)
             {
                 picTenThousand.Image = _imageTenThousandCollections[Convert.ToInt32(tenThousandNumber)].Image;
 
@@ -421,7 +421,7 @@ namespace Enlottery
         private void LotteryRandom()
         {
             luckyTimmer.Enabled = true;
-            luckyTimmer.Interval = (150);
+            luckyTimmer.Interval = (200);
             luckyTimmer.Elapsed += RandomLuckyMan;
         }
         

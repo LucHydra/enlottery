@@ -3,3 +3,12 @@
 ################################################################################
 
 /Enlottery/bin
+/Enlottery/obj/Release/TempPE/Properties.Resources.Designer.cs.dll
+/Enlottery/obj/Release/Enlottery.Properties.Resources.resources
+/Enlottery/obj/Release/Enlottery.pdb
+/Enlottery/obj/Release/Enlottery.frmMain.resources
+/Enlottery/obj/Release/Enlottery.exe
+/Enlottery/obj/Release/Enlottery.csproj.GenerateResource.cache
+/Enlottery/obj/Release/Enlottery.csproj.FileListAbsolute.txt
+/Enlottery/obj/Release/Enlottery.csproj.CoreCompileInputs.cache
+/Enlottery/obj/Release/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs

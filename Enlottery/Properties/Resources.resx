@@ -121,6 +121,9 @@
   <data name="num9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\num9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Enlab_Primary-Logo_Horizontal_On-Light@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enlab_Primary-Logo_Horizontal_On-Light@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="num7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\num7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,7 +154,7 @@
   <data name="logo-white.d3e0da21bd6cd71cfcbb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-white.d3e0da21bd6cd71cfcbb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Enlab_Primary-Logo_Horizontal_On-Light@3x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enlab_Primary-Logo_Horizontal_On-Light@3x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Enlab_Primary-Logo_Horizontal_On-Dark@4x (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enlab_Primary-Logo_Horizontal_On-Dark@4x (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
