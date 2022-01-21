@@ -34,6 +34,7 @@ namespace Enlottery
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,7 +64,6 @@ namespace Enlottery
             this.imgListTens = new System.Windows.Forms.ImageList(this.components);
             this.imgListHundreds = new System.Windows.Forms.ImageList(this.components);
             this.imgListUnits = new System.Windows.Forms.ImageList(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -97,6 +97,20 @@ namespace Enlottery
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1504, 91);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label1.Location = new System.Drawing.Point(509, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(466, 91);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "EnLottery";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Enlottery.Properties.Resources.Enlab_Primary_Logo_Horizontal_On_Dark_4x__1_;
@@ -119,7 +133,7 @@ namespace Enlottery
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(520, 91);
             this.label2.TabIndex = 0;
-            this.label2.Text = "v2 - 2018 © Luc Nguyen";
+            this.label2.Text = "v2.0 - 2018 © Luc Nguyen";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // panel1
@@ -169,6 +183,7 @@ namespace Enlottery
             this.t4n.Size = new System.Drawing.Size(336, 56);
             this.t4n.TabIndex = 15;
             this.t4n.Text = "________________________";
+            this.t4n.Visible = false;
             // 
             // t3n
             // 
@@ -180,6 +195,7 @@ namespace Enlottery
             this.t3n.Size = new System.Drawing.Size(336, 56);
             this.t3n.TabIndex = 14;
             this.t3n.Text = "________________________";
+            this.t3n.Visible = false;
             // 
             // t4
             // 
@@ -213,6 +229,7 @@ namespace Enlottery
             this.t2n.Size = new System.Drawing.Size(336, 56);
             this.t2n.TabIndex = 11;
             this.t2n.Text = "________________________";
+            this.t2n.Visible = false;
             // 
             // t1n
             // 
@@ -224,6 +241,7 @@ namespace Enlottery
             this.t1n.Size = new System.Drawing.Size(336, 56);
             this.t1n.TabIndex = 10;
             this.t1n.Text = "________________________";
+            this.t1n.Visible = false;
             // 
             // t2
             // 
@@ -294,6 +312,7 @@ namespace Enlottery
             this.f1n.Size = new System.Drawing.Size(336, 56);
             this.f1n.TabIndex = 9;
             this.f1n.Text = "________________________";
+            this.f1n.Visible = false;
             // 
             // f1
             // 
@@ -316,7 +335,7 @@ namespace Enlottery
             this.groupBox2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox2.Location = new System.Drawing.Point(29, 624);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(685, 161);
+            this.groupBox2.Size = new System.Drawing.Size(685, 170);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Second Prize";
@@ -331,6 +350,7 @@ namespace Enlottery
             this.s2n.Size = new System.Drawing.Size(336, 56);
             this.s2n.TabIndex = 11;
             this.s2n.Text = "________________________";
+            this.s2n.Visible = false;
             // 
             // s1n
             // 
@@ -342,6 +362,7 @@ namespace Enlottery
             this.s1n.Size = new System.Drawing.Size(336, 56);
             this.s1n.TabIndex = 10;
             this.s1n.Text = "________________________";
+            this.s1n.Visible = false;
             // 
             // s2
             // 
@@ -458,20 +479,6 @@ namespace Enlottery
             this.imgListUnits.Images.SetKeyName(7, "num0.png");
             this.imgListUnits.Images.SetKeyName(8, "num5.png");
             this.imgListUnits.Images.SetKeyName(9, "num8.png");
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(509, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(466, 91);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "EnLottery";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 

@@ -33,7 +33,7 @@ namespace Enlottery
         private readonly List<ImageCollection> _imageThousandCollections;
         private readonly List<ImageCollection> _imageTenThousandCollections;
 
-        private readonly List<LuckyMan> _luckyManQueue = new List<LuckyMan>();
+        private List<LuckyMan> _luckyManQueue = new List<LuckyMan>();
         private readonly List<LuckyMan> _luckyMen = new List<LuckyMan>();
         private readonly List<string> _numberColumn = new List<string>
         {
@@ -95,9 +95,12 @@ namespace Enlottery
                         if (string.IsNullOrEmpty(luckyNumber))
                             continue;
                         
-                        if (luckyNumber.Length == 2) luckyNumber = "0" + luckyNumber;
-                        else if (luckyNumber.Length == 3) luckyNumber = "00" + luckyNumber;
-                        else if (luckyNumber.Length == 4) luckyNumber = "000" + luckyNumber;
+                        if (luckyNumber.Length == 2) 
+                            luckyNumber = "000" + luckyNumber;
+                        else if (luckyNumber.Length == 3) 
+                            luckyNumber = "00" + luckyNumber;
+                        else if (luckyNumber.Length == 4) 
+                            luckyNumber = "0" + luckyNumber;
 
                         var isDuplicated = false;
                         foreach (var luckyMan in _luckyManQueue)
@@ -118,6 +121,8 @@ namespace Enlottery
                     }
                 }
             }
+
+            _luckyManQueue = _luckyManQueue.OrderBy(_ => _.LuckyNumber).ToList();
         }
 
         private void RandomPrize()
@@ -126,7 +131,7 @@ namespace Enlottery
             for (int i = 0; i < 7; i++)
             {
                 Random rd = new Random();
-                var index = rd.Next(_luckyManQueue.Count);
+                var index = rd.Next(_luckyManQueue.Count - 1);
                 var luckyMan = _luckyManQueue[index];
 
                 _luckyMen.Add(new LuckyMan
@@ -134,8 +139,8 @@ namespace Enlottery
                     LuckyNumber = luckyMan.LuckyNumber,
                     Man = luckyMan.Man
                 });
-                Thread.Sleep(500);
             }
+            Thread.Sleep(500);
         }
 
         private DataSet ImportExcelXLS(string FileName, bool hasHeaders)
@@ -337,70 +342,64 @@ namespace Enlottery
             var index = luckyRandom.Next(_luckyManQueue.Count);
             var runingLuckyMan = _luckyManQueue[index];
 
-            var unitsNumber = runingLuckyMan.LuckyNumber.Substring(4);
-            var tensNumber = runingLuckyMan.LuckyNumber.Substring(3, 1);
-            var hunderedNumber = runingLuckyMan.LuckyNumber.Substring(2, 1);
-            var thousandNumber = runingLuckyMan.LuckyNumber.Substring(1, 1);
-            var tenThousandNumber = runingLuckyMan.LuckyNumber.Substring(0, 1);
-
             // Running Unit
             if (_stepCount < 90)
             {                
-                picUnits.Image = _imageUnitsCollectionst[Convert.ToInt32(unitsNumber)].Image;
+                picUnits.Image = _imageUnitsCollectionst[runingLuckyMan.Unit()].Image;
             }
 
             // Stop Unit
             if (_stepCount == 90)
             {
-                picUnits.Image = _imageUnitsCollections[Convert.ToInt32(unitsNumber)].Image;
+                picUnits.Image = _imageUnitsCollections[_luckyMan.Unit()].Image;
             }
 
             // Running Tens
             if (_stepCount < 110)
             {
-                picTens.Image = _imageTensCollectionst[Convert.ToInt32(tensNumber)].Image;
+                picTens.Image = _imageTensCollectionst[runingLuckyMan.Tens()].Image;
             }
                 
             // Stop Tens
             if (_stepCount == 110)
             {
-                picTens.Image = _imageTensCollections[Convert.ToInt32(tensNumber)].Image;
+                picTens.Image = _imageTensCollections[_luckyMan.Tens()].Image;
             }
 
             // Running Hundered
             if (_stepCount < 150)
             {
-                picHundreds.Image = _imageHunderedCollectionst[Convert.ToInt32(hunderedNumber)].Image;
+                picHundreds.Image = _imageHunderedCollectionst[runingLuckyMan.Hundreded()].Image;
             } 
 
             // Stop Hundered
             if (_stepCount == 150)
             {
-                picHundreds.Image = _imageHunderedCollections[Convert.ToInt32(hunderedNumber)].Image;
+                picHundreds.Image = _imageHunderedCollections[_luckyMan.Hundreded()].Image;
             } 
 
             // Running Thousand
             if (_stepCount < 170)
             {
-                picThousand.Image = _imageThousandCollectionst[Convert.ToInt32(thousandNumber)].Image;
+                picThousand.Image = _imageThousandCollectionst[runingLuckyMan.Thousand()].Image;
             }  
 
             // Stop Thousand
             if (_stepCount == 170)
             {
-                picThousand.Image = _imageThousandCollections[Convert.ToInt32(thousandNumber)].Image;
+                picThousand.Image = _imageThousandCollections[_luckyMan.Thousand()].Image;
             } 
 
             // Running Ten Thousand
             if (_stepCount < 200)
             {
-                picTenThousand.Image = _imageTenThousandCollectionst[Convert.ToInt32(tenThousandNumber)].Image;
+                picTenThousand.Image = _imageTenThousandCollectionst[runingLuckyMan.TenThousand()].Image;
             }
 
             // Stop Ten Thousand
             if (_stepCount == 200)
             {
-                picTenThousand.Image = _imageTenThousandCollections[Convert.ToInt32(tenThousandNumber)].Image;
+                picTenThousand.Image = _imageTenThousandCollections[_luckyMan.TenThousand()].Image;
 
                 InvokeLabel(_luckyMan, true);
                 InvokeButton(btnGenerate, true);
